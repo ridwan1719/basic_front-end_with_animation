@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page1 {
+    min-height: 200vh;
+    width: 100%;
+    background-color: #FFF5E1;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 1vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#nav-elements {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-elements h4 {
+    padding: 10px 20px;
+    border: 1px solid #0c1844ab;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+#nav-elements h4::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0C1844;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+#nav-elements h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-elements h4 a {
+    text-decoration: none;
+    color: #0C1844;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-elements h4:hover a {
+    color: #FFF5E1;
+}
+
+#center {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: solid #0C1844;
+    padding-bottom: 2vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    color: #0C1844;
+    line-height: 2vw;
+}
+
+#right h1 {
+    width: 50vw;
+    text-align: right;
+    font-size: 4vw;
+}
+
+.container {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+.leaf {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: linear-gradient(pink, #C80036);
+    border-radius: 0 50% 50% 50%;
+    z-index: 1;
+    animation: moveLeaf linear infinite;
+    
+}
+
+#text {
+    position: relative;
+    padding-top: 20vh;
+    text-align: center;
+    z-index: 2; /* Make sure text is above the leaves */
+}
+
+#text p {
+    font-size: 5vh;
+    margin: 0; /* Remove default margins */
+}
+
+@keyframes moveLeaf {
+    from {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(100vw) translateY(0) rotate(360deg);
+    }
+}
+
+.leaf:nth-child(1) { animation-duration: 7s;}
+.leaf:nth-child(2) { animation-duration: 8s;}
+.leaf:nth-child(3) { animation-duration: 5s;}
+.leaf:nth-child(4) { animation-duration: 6s;}
+.leaf:nth-child(5) { animation-duration: 8s;}
+.leaf:nth-child(6) { animation-duration: 5s;}
+.leaf:nth-child(7) { animation-duration: 5s;}
+.leaf:nth-child(8) { animation-duration: 4s;}
+.leaf:nth-child(9) { animation-duration: 6s;}
+.leaf:nth-child(10) { animation-duration: 8s;}
+.leaf:nth-child(11) { animation-duration: 5s;}
+.leaf:nth-child(12) { animation-duration: 9s;}
+.leaf:nth-child(13) { animation-duration: 5s;}
+.leaf:nth-child(14) { animation-duration: 7s;}
+.leaf:nth-child(15) { animation-duration: 5s;}
+.leaf:nth-child(16) { animation-duration: 4s;}
+.leaf:nth-child(17) { animation-duration: 4s;}
+.leaf:nth-child(18) { animation-duration: 4s;}
+.leaf:nth-child(19) { animation-duration: 6s;}
+.leaf:nth-child(20) { animation-duration: 6s;}
+.leaf:nth-child(21) { animation-duration: 5s;}
+.leaf:nth-child(22) { animation-duration: 6s;}
+.leaf:nth-child(23) { animation-duration: 7s;}
+.leaf:nth-child(24) { animation-duration: 5s;}
+.leaf:nth-child(25) { animation-duration: 9s;}
+.leaf:nth-child(26) { animation-duration: 6s;}
+.leaf:nth-child(27) { animation-duration: 9s;}
+.leaf:nth-child(28) { animation-duration: 8s;}
+.leaf:nth-child(29) { animation-duration: 7s;}
+.leaf:nth-child(30) { animation-duration: 8s;}
+.leaf:nth-child(31) { animation-duration: 8s;}
+.leaf:nth-child(32) { animation-duration: 6s;}
+.leaf:nth-child(33) { animation-duration: 6s;}
+.leaf:nth-child(34) { animation-duration: 9s;}
+.leaf:nth-child(35) { animation-duration: 6s;}
+.leaf:nth-child(36) { animation-duration: 9s;}
